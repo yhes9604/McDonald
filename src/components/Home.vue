@@ -39,7 +39,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="desc_main">
+  <div class="desc_main container">
     <div
       id="carouselExampleControls"
       class="carousel slide"
@@ -154,7 +154,7 @@ onMounted(() => {
 
 <style scoped>
 #carouselExampleControls {
-  padding: 15px;
+  margin-bottom: 15px;
 }
 #map {
   height: 400px; /* The height is 400 pixels */

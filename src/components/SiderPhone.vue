@@ -30,13 +30,18 @@ export default {
       </div>
       <div class="sider_content" v-if="MenuBun">
         <div class="sider_content_center">
+          <ul>
+            <li class="sider_list_title">別具滋味</li>
+          </ul>
           <ul class="sider_list" @click="Menu">
             <router-link to="/meal">超值全餐</router-link>
             <router-link to="/super">極選系列</router-link>
             <router-link to="/share">麥當勞分享盒</router-link>
           </ul>
+          <ul>
+            <li class="sider_list_title">General</li>
+          </ul>
           <ul class="sider_list" @click="Menu">
-            <router-link to="/map">企業永續 </router-link>
             <router-link to="/map">尋找餐廳 </router-link>
             <router-link to="/calculator">營養計算器</router-link>
           </ul>
@@ -119,5 +124,12 @@ export default {
   color: white;
   position: relative;
   left: -20px;
+}
+.sider_list_title {
+  list-style-type: none;
+  color: #2f2d2d;
+  position: relative;
+  left: -30px;
+  letter-spacing: 1px;
 }
 </style>

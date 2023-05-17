@@ -1,5 +1,5 @@
 <template>
-  <div class="desc_main">
+  <div class="desc_main container">
     <div class="location">
       <div class="locationLeft">
         <div class="input-group mb-3">
@@ -24,7 +24,7 @@
       <div class="locationRight">
         <button @click="nowlocation">
           <i class="fa-solid fa-location-crosshairs"></i>
-          我的附近麥當勞
+          附近麥當勞
         </button>
       </div>
     </div>
@@ -179,7 +179,7 @@ export default {
 }
 .locationRight {
   width: 20%;
-  margin-left: 50px;
+  margin-left: 5px;
   display: flex;
   justify-content: center;
 }
@@ -187,6 +187,7 @@ export default {
   height: 100%;
 }
 .locationRight > button {
+  width: 100%;
   border: none;
   background-color: #ffbc0e;
   font-size: 16px;

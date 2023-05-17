@@ -135,9 +135,9 @@ export default {
 </script>
 
 <template>
-  <div class="desc_main">
+  <div class="desc_main container">
     <div class="meal_title">極選系列</div>
-    <div class="row row-cols-2 row-cols-md-3 g-4 meal_1">
+    <div class="row row-cols-2 row-cols-md-3 g-4 p-3">
       <div class="col" v-for="(item, index) in meallist" :key="index">
         <router-link class="card" @click="router_shop(item)" to="/mealitem">
           <img :src="item.card_img" class="card-img-top" alt="..." />
@@ -147,7 +147,7 @@ export default {
         </router-link>
       </div>
     </div>
-    <div class="row row-cols-1 row-cols-md-2 g-4 meal_2">
+    <div class="row row-cols-1 row-cols-md-2 g-4 p-3">
       <div class="col">
         <div class="card h-100">
           <img
@@ -181,28 +181,26 @@ export default {
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <img
-            src="https://www.mcdonalds.com/content/dam/sites/tw/publication/desktop/2022/1220evm.jpeg"
-            alt=""
-            width="400px"
-          />
-        </div>
-        <div class="col">
-          <div class="text">
-            <div class="meal_title">套餐自由配<br />超值美味多種選擇</div>
-            <br />
-            超值全餐供應時間為上午10:30至凌晨05:00；嫩煎鷄腿堡及牛肉類商品供應至凌晨01:00；麥香鷄、勁辣鷄腿堡、麥香魚供應至凌晨04:00；各產品供應時間請依餐廳實際供應為主；部份餐廳未供應，或僅供應部份品項​
-            <br />
-            1.麥克鷄塊沾醬供應規則：每份六塊麥克鷄塊餐提供沾醬1盒，每份十塊麥克鷄塊餐提供沾醬2盒，沾醬恕不提供加購
-            <br />
-            2.
-            套餐搭配規則：配餐價格僅限於搭配主餐時有效，一份主餐限搭配一份配餐，主餐選擇以各餐廳價目表為準
-            <br />
-            3.套餐配餐選擇：經典配餐含中薯與38元冷/熱飲；清爽配餐含四季沙拉與38元冷/熱飲，供應時間為上午10:30至晚上10:00；勁脆配餐含麥脆鷄腿(原味/辣味)一塊與38元冷/熱飲；炫冰配餐含冰炫風®(OREO)、小薯一份與38元冷/熱飲；豪吃配餐含麥克鷄塊®六塊、小薯一份與38元冷/熱飲；地瓜配餐含金黃地瓜條與38元冷/熱飲；炫冰配餐、豪吃配餐之小薯恕不可補差額升級。以上配餐飲料皆可補差額升級其他冷/熱飲，若飲料選擇低於38元冷/熱飲，恕不退差額
-          </div>
+    <div class="row p-3">
+      <div class="col-12 col-md-6">
+        <img
+          class="test1"
+          src="https://www.mcdonalds.com/content/dam/sites/tw/publication/desktop/2022/1220evm.jpeg"
+          alt=""
+        />
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="d-flex justify-content-center flex-column">
+          <div class="meal_title">套餐自由配<br />超值美味多種選擇</div>
+          <br />
+          超值全餐供應時間為上午10:30至凌晨05:00；嫩煎鷄腿堡及牛肉類商品供應至凌晨01:00；麥香鷄、勁辣鷄腿堡、麥香魚供應至凌晨04:00；各產品供應時間請依餐廳實際供應為主；部份餐廳未供應，或僅供應部份品項​
+          <br />
+          1.麥克鷄塊沾醬供應規則：每份六塊麥克鷄塊餐提供沾醬1盒，每份十塊麥克鷄塊餐提供沾醬2盒，沾醬恕不提供加購
+          <br />
+          2.
+          套餐搭配規則：配餐價格僅限於搭配主餐時有效，一份主餐限搭配一份配餐，主餐選擇以各餐廳價目表為準
+          <br />
+          3.套餐配餐選擇：經典配餐含中薯與38元冷/熱飲；清爽配餐含四季沙拉與38元冷/熱飲，供應時間為上午10:30至晚上10:00；勁脆配餐含麥脆鷄腿(原味/辣味)一塊與38元冷/熱飲；炫冰配餐含冰炫風®(OREO)、小薯一份與38元冷/熱飲；豪吃配餐含麥克鷄塊®六塊、小薯一份與38元冷/熱飲；地瓜配餐含金黃地瓜條與38元冷/熱飲；炫冰配餐、豪吃配餐之小薯恕不可補差額升級。以上配餐飲料皆可補差額升級其他冷/熱飲，若飲料選擇低於38元冷/熱飲，恕不退差額
         </div>
       </div>
     </div>
@@ -211,20 +209,18 @@ export default {
 
 
 <style scoped>
+a {
+  text-decoration: none;
+  color: #333;
+}
 .text {
   width: 80%;
   letter-spacing: 1px;
 }
-.container {
-  position: relative;
-  left: 3%;
-  margin-top: 30px;
-  margin-right: 50px;
-}
+
 .meal_title {
   width: 100%;
   text-align: center;
-  margin: 10px;
   font-size: 36px;
   letter-spacing: 1px;
 }
@@ -233,15 +229,7 @@ export default {
   font-weight: 400;
   font-size: 16px;
 }
-.meal_1 {
-  position: relative;
-  left: 3%;
-  margin-right: 50px;
-}
-.meal_2 {
-  position: relative;
-  left: 3%;
-  margin-right: 50px;
-  margin-top: 20px;
+.test1 {
+  width: 100%;
 }
 </style>

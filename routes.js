@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory, createWebHistory } from "vue-router";
 import Home from "./src/components/Home.vue"
 import Meal from "./src/components/Meal.vue"
 import MealItem from "./src/components/MealItem.vue"
@@ -9,6 +9,10 @@ import MealShare from "./src/components/MealShare.vue"
 const routes = [
     {
       path: "/",
+      component: Home,
+    },
+    {
+      path: "/McDonald",
       component: Home,
     },
     {
@@ -40,7 +44,7 @@ const routes = [
   
   const router = createRouter({
     routes: routes,
-    history: createWebHistory(),
+    history: createWebHashHistory()
   });
   export { router };
   
