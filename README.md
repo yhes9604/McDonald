@@ -1,7 +1,7 @@
 # McDonald 官方網頁
 
 ## DEMO
-網頁預覽： [DEMO](https://mcdonald-cf4e0.web.app/#/)
+網頁預覽： [DEMO](https://yhes9604.github.io/McDonald/#/)
 
 ## 使用技術
 * 使用 Vue.js / Vue Vite 架設，Vue-Router 管理路由
